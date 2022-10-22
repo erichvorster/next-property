@@ -73,7 +73,7 @@ const Home = () => {
       <div className="container px-4 mx-auto py-20">
         <div className="grid grid-cols-2">
           <div>
-            <h1 className="text-5xl">Newly listed properties</h1>
+            <h1 className="text-5xl">Our featured listings</h1>
           </div>
           <div className="px-12">
             <p>

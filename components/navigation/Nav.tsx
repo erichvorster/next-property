@@ -18,7 +18,7 @@ const Nav = () => {
         <Link href="/Buy">
           <a>Buy</a>
         </Link>
-        <Link href="/About">
+        <Link href="/Sell">
           <a>Sell</a>
         </Link>
         <Link href="/About">
@@ -26,7 +26,7 @@ const Nav = () => {
         </Link>
       </div>
       <div>
-        <Link href="/About">
+        <Link href="/contact">
           <button className="px-10 py-1 rounded-full border border-black">
             <a>Contact</a>
           </button>

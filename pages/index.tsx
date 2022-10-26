@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 
 //Images
-import heroImage from "../public/pexels-sindre-strøm-966397.jpg";
+import heroImage from "../public/img_hero.jpg";
 import { url } from "inspector";
 import FeaturedHouse from "../components/featured house/FeaturedHouse";
 import HouseGrid from "../components/HouseGrid/HouseGrid";
@@ -19,8 +19,12 @@ const Home = () => {
       <div className="container px-4 mx-auto pt-20">
         <div className="grid grid-cols-2">
           <div>
-            <h1 className="text-6xl">
-              Discover a home youll love to live in in Mbobela
+            <h1 className="text-6xl font-bold">
+              Discover your home in the{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+                heart
+              </span>{" "}
+              of the lowveld
             </h1>
           </div>
           <div className="px-12">
@@ -33,11 +37,21 @@ const Home = () => {
               impedit quasi soluta eum ut omnis quo! Id, perferendis quae iste
               cum quas aut fugit hic, culpa iure qui aperiam, repellat labore?
             </p>
+            <button className=" px-10 py-1 mt-5 mb-8 rounded-full border border-black">
+              <a>Our homes</a>
+            </button>
           </div>
         </div>
       </div>
       <div className="container px-4 mx-auto pt-20">
-        <div className="bg-black w-full h-96"></div>
+        <div className=" w-full h-96">
+          <Image
+            src="/../public/img_hero.jpg"
+            alt="property"
+            width={1200}
+            height={500}
+          />
+        </div>
       </div>
       <div className="container px-4 mx-auto pt-20">
         <BuySell />

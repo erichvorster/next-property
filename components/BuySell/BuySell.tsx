@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import HouseGrid from "../HouseGrid/HouseGrid";
+import BorderButton from "../BorderButton/BorderButton";
 
 const BuySell = () => {
   return (
     <>
       <div className="grid grid-cols-2 gap-4 mb-24 mt-32">
-        <div className="text-center flex flex-col items-center rounded shadow-xl px-10 py-20 ml-12 border">
+        <div className="text-center flex flex-col items-center rounded hover:shadow-xl hover:bg-blue-100 px-10 py-20 ml-12 border transition-all 0.3s ease-in">
           <div className="h-40 w-40">
             <Image
               src="/../public/real-estate.png"
@@ -20,11 +21,9 @@ const BuySell = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
             dolores. Porro quibusdam ratione impedit soluta.
           </p>
-          <button className="px-10 py-1 rounded-full border border-black">
-            Browse homes
-          </button>
+          <BorderButton btnText="Browse homes" />
         </div>
-        <div className="text-center flex flex-col items-center rounded shadow-xl px-10 py-20 mr-12 border">
+        <div className="text-center flex flex-col items-center rounded hover:shadow-xl hover:bg-blue-100 px-100 py-20 mr-12 border transition-all 0.3s ease-in">
           <div className="h-40 w-40 ">
             <Image
               src="/../public/contract.png"
@@ -38,9 +37,7 @@ const BuySell = () => {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
             distinctio earum rerum corrupti odit!
           </p>
-          <button className="px-10 py-1 rounded-full border border-black">
-            Sell with us
-          </button>
+          <BorderButton btnText="Sell with us" />
         </div>
       </div>
     </>

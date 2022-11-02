@@ -21,7 +21,7 @@ const Home = () => {
           <div>
             <h1 className="text-6xl font-bold">
               Discover your home in the{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-blue-400">
                 heart
               </span>{" "}
               of the lowveld

@@ -12,6 +12,7 @@ import TextBanner from "../components/TextBanner/TextBanner";
 import ImageText from "../components/ImageText/ImageText";
 import BlogArticels from "../components/BlogArticles/BlogArticels";
 import BuySell from "../components/BuySell/BuySell";
+import BorderButton from "../components/BorderButton/BorderButton";
 
 const Home = () => {
   return (
@@ -37,9 +38,9 @@ const Home = () => {
               impedit quasi soluta eum ut omnis quo! Id, perferendis quae iste
               cum quas aut fugit hic, culpa iure qui aperiam, repellat labore?
             </p>
-            <button className=" px-10 py-1 mt-5 mb-8 rounded-full border border-black">
-              <a>Our homes</a>
-            </button>
+            <div className="mt-6">
+              <BorderButton btnText="All homes" />
+            </div>
           </div>
         </div>
       </div>

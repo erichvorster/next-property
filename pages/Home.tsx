@@ -3,6 +3,7 @@ import HomeHero from "../components/HomeHero/HomeHero";
 import Carousel from "../components/Carousel/Carousel";
 import PorpertyDescription from "../components/PropertyDescription/PorpertyDescription";
 import FindContact from "../components/FindContact/FindContact";
+import RequestViewing from "../components/RequestViewing/RequestViewing";
 
 const Home = () => {
   return (
@@ -17,7 +18,7 @@ const Home = () => {
         <PorpertyDescription />
       </div>
       <div>
-        <FindContact />
+        <RequestViewing />
       </div>
     </div>
   );

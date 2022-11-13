@@ -4,7 +4,7 @@ const PorpertyDescription = () => {
   return (
     <div className="mb-24 mt-32">
       <h4 className="text-3xl font-bold mb-4">Property Description</h4>
-      <div className="grid grid-cols-2 gap-4 ">
+      <div className="grid grid-cols-2 gap-6 ">
         <div className="">
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam

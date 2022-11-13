@@ -1,6 +1,7 @@
 import ArrowUpRightIcon from "@heroicons/react/24/solid/ArrowUpRightIcon";
 import { AppProps } from "next/app";
 import React, { ReactElement, FC } from "react";
+import UndButton from "../UndButton/UndButton";
 
 const FeaturedHouse = () => {
   return (
@@ -38,10 +39,7 @@ const FeaturedHouse = () => {
             doloribus rem!
           </p>
           <div className="mt-6">
-            <a href="#" className="flex ">
-              <strong>See more</strong>
-              <ArrowUpRightIcon className="h-4 w-4 ml-2" />
-            </a>
+            <UndButton btnText="View property" />
           </div>
         </div>
       </div>

@@ -2,8 +2,8 @@ import React from "react";
 
 const House = () => {
   return (
-    <div className="my-5">
-      <div className="h-80 w-full bg-black ">
+    <div className="my-5 p-4 border rounded hover:shadow-xl hover:bg-blue-100 transition-all 0.3s ease-in hover:-translate-y-2 cursor-pointer">
+      <div className="h-80 w-full bg-black rounded">
         <img />
       </div>
       <div className="pt-4">

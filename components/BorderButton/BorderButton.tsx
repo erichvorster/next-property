@@ -1,4 +1,5 @@
 import React from "react";
+import { motion as m } from "framer-motion";
 
 type buttonProps = {
   btnText: string;

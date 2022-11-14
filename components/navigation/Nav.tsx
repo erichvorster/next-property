@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { HomeModernIcon } from "@heroicons/react/24/solid";
 import BorderButton from "../BorderButton/BorderButton";
+import UndButton from "../UndButton/UndButton";
 
 const Nav = () => {
   return (

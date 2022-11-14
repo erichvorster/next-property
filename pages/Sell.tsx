@@ -1,6 +1,7 @@
 import React from "react";
 import BorderButton from "../components/BorderButton/BorderButton";
 import SalesServices from "../components/SalesServices/SalesServices";
+import Accordion from "../components/Accordion/Accordion";
 
 const Sell = () => {
   return (
@@ -18,6 +19,7 @@ const Sell = () => {
       <div className="mt-28">
         <SalesServices />
       </div>
+      <div className="mt-28"></div>
     </div>
   );
 };

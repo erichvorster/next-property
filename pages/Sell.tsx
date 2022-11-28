@@ -2,6 +2,8 @@ import React from "react";
 import BorderButton from "../components/BorderButton/BorderButton";
 import SalesServices from "../components/SalesServices/SalesServices";
 import Accordion from "../components/Accordion/Accordion";
+import SalesPitch from "../components/SalesPitch/SalesPitch";
+import SalesContact from "../components/SalesContact/SalesContact";
 
 const Sell = () => {
   return (
@@ -17,9 +19,12 @@ const Sell = () => {
         </div>
       </div>
       <div className="mt-28">
-        <SalesServices />
+        {/* <SalesServices /> */}
+        <SalesPitch />
       </div>
-      <div className="mt-28"></div>
+      <div className="mt-28">
+        <SalesContact />
+      </div>
     </div>
   );
 };

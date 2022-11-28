@@ -33,7 +33,7 @@ const Nav = () => {
             Sell
           </a>
         </Link>
-        <Link href="/About">
+        <Link href="/Services">
           <a className="text-lg text-gray-400 font-bold hover:text-black transition-all 0.3s ease-in">
             Services
           </a>
@@ -41,7 +41,7 @@ const Nav = () => {
       </div>
       <div>
         <Link href="/contact">
-          <BorderButton btnText="Contact" />
+          <BorderButton btnText="Contact" url="/contact" />
         </Link>
       </div>
     </nav>

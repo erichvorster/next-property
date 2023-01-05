@@ -146,3 +146,19 @@ a {
   background-size: 100% 3px;
   background-position: 0 100%;
 }
+#circle {
+  position: relative;
+  border-radius: 100%;
+  padding: 16px;
+ 	animation: rotate-animation 8s infinite linear;
+}
+
+#circle span {
+  position: absolute;
+  transform-origin: top left;
+}
+
+@keyframes rotate-animation {
+  from { transform: rotate(0); }
+  to { transform: rotate(-360deg); }
+}

@@ -15,6 +15,38 @@ import UndButton from "../components/UndButton/UndButton";
 import { motion as m } from "framer-motion";
 
 const Home = () => {
+  const degreeToRadian = (angle: number) => {
+    return angle * (Math.PI / 180);
+  };
+
+  const radius = 80;
+  const diameter = radius * 2;
+
+  const circle = document.querySelector("#circle");
+  circle.style.width = `${diameter}px`;
+  circle.style.height = `${diameter}px`;
+
+  const text = circle.dataset.text;
+  const characters = text.split("");
+
+  const deltaAngle = 360 / characters.length;
+  const characterOffsetAngle = 8;
+  let currentAngle = -90;
+
+  characters.forEach((character, index) => {
+    const span = document.createElement("span");
+    span.innerText = character;
+    const xPos = radius * (1 + Math.cos(degreeToRadian(currentAngle)));
+    const yPos = radius * (1 + Math.sin(degreeToRadian(currentAngle)));
+
+    const transform = `translate(${xPos}px, ${yPos}px)`;
+    const rotate = `rotate(${index * deltaAngle + characterOffsetAngle}deg)`;
+    span.style.transform = `${transform} ${rotate}`;
+
+    currentAngle += deltaAngle;
+    circle.appendChild(span);
+  });
+
   return (
     <m.div
       initial={{ opacity: 0 }}
@@ -22,39 +54,44 @@ const Home = () => {
       transition={{ duration: 0.75, ease: "easeOut" }}
     >
       <div className="container px-4 mx-auto pt-20">
-        <div className="grid grid-cols-2">
+        <div>
           <div>
-            <h1 className="text-6xl font-bold">
-              Discover your home in the{" "}
+            <h1 className="text-8xl font-bold tracking-wide leading-[110px]">
+              DISCOVER YOUR HOME IN THE
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-blue-400">
-                heart
+                {" "}
+                HEART
               </span>{" "}
-              of the lowveld
+              OF THE LOWVELD.
             </h1>
           </div>
-          <div className="px-12">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
-              ratione, eos possimus debitis atque nam autem mollitia fuga
-            </p>
-            <br />
-            <p>
-              impedit quasi soluta eum ut omnis quo! Id, perferendis quae iste
-              cum quas aut fugit hic, culpa iure qui aperiam, repellat labore?
-            </p>
-            <div className="mt-6">
-              <BorderButton btnText="All homes" />
+          <div className="flex justify-between mt-12">
+            <div className="flex">
+              <div className="mr-12">
+                <BorderButton btnText="View all homes" />
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  <br />
+                  Placeat ratione, eos possimus debitis atque nam autem mollitia
+                  fuga
+                </p>
+              </div>
+            </div>
+            <div>
+              <div id="circle" data-text="SEE MORE SEE MORE&nbsp;"></div>
             </div>
           </div>
         </div>
       </div>
       <div className="container px-4 mx-auto pt-20">
-        <div className=" w-full h-96">
+        <div className=" w-92 h-64">
           <Image
             src="/../public/img_hero.jpg"
             alt="property"
-            width={1200}
-            height={500}
+            width={1600}
+            height={600}
           />
         </div>
       </div>

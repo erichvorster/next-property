@@ -147,15 +147,19 @@ a {
   background-position: 0 100%;
 }
 #circle {
-  position: relative;
+  position: absolute;
   border-radius: 100%;
-  padding: 16px;
+  padding: 0px;
  	animation: rotate-animation 8s infinite linear;
+  bottom:-5px;
+  right:80px;
 }
 
 #circle span {
   position: absolute;
   transform-origin: top left;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 @keyframes rotate-animation {

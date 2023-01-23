@@ -104,10 +104,11 @@ const Home = () => {
             alt="property"
             width={1600}
             height={600}
+            className="rounded"
           />
         </div>
       </div>
-      <div className="container px-4 mx-auto pt-20">
+      <div className="container px-4 mx-auto pt-64">
         <BuySell />
       </div>
       <hr className="mx-10" />

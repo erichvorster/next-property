@@ -9,22 +9,19 @@ const Sell = () => {
   return (
     <div className="container px-4 mx-auto pt-20">
       <div className="sell-hero text-center">
-        <h2 className="text-5xl">All the tools you need to sell your home</h2>
-        <p className="max-w-lg mx-auto mt-8">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, nam
-          reiciendis ut aliquam maxime ipsam.
+        <h2 className="text-5xl font-bold">
+          All the tools you need to sell your home
+        </h2>
+        <p className="max-w-lg mx-auto mt-6">
+          We make it easier to sell your home and move forward.
         </p>
-        <div className="mt-4">
-          <BorderButton btnText="Sell with us" />
-        </div>
       </div>
-      <div className="mt-28">
+      <div className="mt-12">
         {/* <SalesServices /> */}
         <SalesPitch />
       </div>
-      <div className="mt-28">
-        <SalesContact />
-      </div>
+
+      <div className="mt-28">{/* <SalesContact /> */}</div>
     </div>
   );
 };

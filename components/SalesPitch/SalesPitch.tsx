@@ -3,6 +3,7 @@ import Image from "next/image";
 import ill from "../../public/ill1 (1).svg";
 import pattern from "../../public/patternpad.svg";
 import BorderButton from "../BorderButton/BorderButton";
+import Accordion from "../Accordion/Accordion";
 
 const SalesPitch = () => {
   return (
@@ -56,6 +57,9 @@ const SalesPitch = () => {
             className="rounded"
           />
         </div>
+      </div>
+      <div>
+        <Accordion question="why are you gay?" answer="who says im gay" />
       </div>
     </div>
   );

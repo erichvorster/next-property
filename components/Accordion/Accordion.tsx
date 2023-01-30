@@ -18,7 +18,7 @@ const Accordion = ({ question, answer }: AppProps) => {
           onClick={() => setIsOpen(!isOpen)}
         >
           <motion.div className="text-gray-800 font-bold ml-1">
-            Do you like animations?
+            {question}
           </motion.div>
         </motion.div>
 
@@ -35,7 +35,7 @@ const Accordion = ({ question, answer }: AppProps) => {
             exit={{ opacity: 0 }}
             className="p-2 text-lg text-gray-700 border-l border-b border-gray-300"
           >
-            Yes, I love them!
+            {answer}
           </motion.div>
         )}
       </AnimatePresence>

@@ -166,3 +166,7 @@ a {
   from { transform: rotate(0); }
   to { transform: rotate(-360deg); }
 }
+
+.find-contact{
+  background-image: url("../public/12.svg");
+}
